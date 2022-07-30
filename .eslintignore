@@ -1,0 +1,9 @@
+node_modules/*
+build/*
+dist/*
+serverless-single-page-app-plugin/*
+
+*.svg
+pre-commit.js
+pre-push.js
+husky-scripts.js

@@ -3,7 +3,9 @@
   align-items: center;
   justify-content: center;
   width: 1.875rem;
+  min-width: 1.875rem;
   height: 1.875rem;
+  min-height: 1.875rem;
   background: transparent;
   transition: all a50ms ease-in-out;
   border: 0;
@@ -12,6 +14,7 @@
   cursor: pointer;
   transition: all 150ms ease-in-out;
   border-radius: 4px;
+  width: 1.5rem;
 }
 
 .root:not(:disabled):hover {

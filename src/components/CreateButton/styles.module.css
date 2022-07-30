@@ -1,0 +1,27 @@
+.root {
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 0;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  font-size: 0.875rem;
+}
+
+.root > svg {
+  margin-left: 0.5rem;
+}
+
+.root:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.root:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}

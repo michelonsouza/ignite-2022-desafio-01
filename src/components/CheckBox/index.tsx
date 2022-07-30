@@ -6,13 +6,13 @@ import classes from './styles.module.css';
 import { CheckboxProps } from './types';
 
 export const CheckBox = forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ id, ...props }, ref): JSX.Element => {
+  ({ id, className, ...props }, ref): JSX.Element => {
     return (
       <label className={classes.root} htmlFor={id}>
         <input
           id={id}
           type="checkbox"
-          className={classes.input}
+          className={`${classes.input}${className ? ` ${className}` : ''}`}
           {...props}
           ref={ref}
         />

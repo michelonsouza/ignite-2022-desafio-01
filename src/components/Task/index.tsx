@@ -11,8 +11,8 @@ export const Task = forwardRef<HTMLDivElement, TaskProps>(
     ref,
   ): JSX.Element => {
     const taskCompletedClass = useMemo(() => {
-      return task.completed ? classes.taskCompleted : '';
-    }, [task.completed]);
+      return task.done ? classes.taskDone : '';
+    }, [task.done]);
 
     const handleToggleCompleteTask = () => {
       onChangeTask(task.id);
@@ -28,10 +28,7 @@ export const Task = forwardRef<HTMLDivElement, TaskProps>(
         ref={ref}
         {...props}
       >
-        <CheckBox
-          onChange={handleToggleCompleteTask}
-          checked={task.completed}
-        />
+        <CheckBox onChange={handleToggleCompleteTask} checked={task.done} />
         <p className={taskCompletedClass}>{task.description}</p>
         <DeleteButton onClick={handleDeleteTask} />
       </div>

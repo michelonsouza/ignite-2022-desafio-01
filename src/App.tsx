@@ -1,4 +1,4 @@
-import { TextInput, CheckBox } from '@/components';
+import { TextInput, CheckBox, DeleteButton } from '@/components';
 
 function App(): JSX.Element {
   return (
@@ -8,6 +8,9 @@ function App(): JSX.Element {
       </div>
       <div style={{ width: '90%', margin: '100px auto' }}>
         <CheckBox />
+      </div>
+      <div style={{ width: '90%', margin: '100px auto' }}>
+        <DeleteButton disabled />
       </div>
     </>
   );
